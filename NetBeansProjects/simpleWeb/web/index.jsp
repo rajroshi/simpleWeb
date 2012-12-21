@@ -14,7 +14,7 @@
     <body>
         <h1>Welcome to the Developer Survey</h1>
         <p> Please indicate which programming languages you are familiar with.</p>
-        <form action="output.jsp">
+        <form action="controllerServlet" method="POST">
             <table border="0">
                 
                 <tbody>
