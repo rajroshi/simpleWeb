@@ -12,27 +12,6 @@
         <title>Login Page</title>
     </head>
     <body>
-        <h1>Login</h1>
-        <form method="POST" action="j_security_check">
-            <table border="0">
-             
-                <tbody>
-                    <tr>
-                        <td align="right">User Name: &nbsp;</td>
-                        <td><input type="text" name="j_username" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td align="right">Password: &nbsp;</td>
-                        <td><input type="password" name="j_password" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><input type="submit" value="login" /></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            
-        </form>
+        <%@include file="WEB-INF/jspf/loginform.jspf" %>
     </body>
 </html>
