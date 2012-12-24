@@ -28,21 +28,30 @@
                 </p:layoutUnit>
 
                 <p:layoutUnit position="west" size="175" collapsible="true">
-                    <p:menu>
-                        <p:submenu label="Religion">
-                            <p:menuitem value="Buddhsim" outcome="Buddhism" />
-                            <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
-                            <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
-                            <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
-
+                    <p:menu>  
+                        <p:submenu label="Religion" >
+                           
+                            <p:menuitem value="Buddhism" outcome="Buddhism" />
+                            <p:menuitem value="Hinduism" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Taoism" url="http://forum.primefaces.org/" />
+                            
                         </p:submenu>
-                        <p:submenu label="Titels">
+                        <p:submenu label="Videos">
                             <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
                             <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
                             <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
                             <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
 
                         </p:submenu>
+                        
+                        <p:submenu label="Gallary" >
+                           
+                            <p:menuitem value="Buddhism" outcome="Buddhism" />
+                            <p:menuitem value="Hinduism" url="http://www.primefaces.org/documentation.html" />
+                            <p:menuitem value="Taoism" url="http://forum.primefaces.org/" />
+                            
+                        </p:submenu>
+                        
                     </p:menu>
                 </p:layoutUnit>
                 
@@ -51,7 +60,21 @@
                 </p:layoutUnit>
                 
                 <p:layoutUnit position="center">
-                    This
+                    <p:accordionPanel>
+
+                        <p:tab title="Religion">
+                            <h:outputText value= "Information about religion section"/>
+                        </p:tab>
+                          
+                        <p:tab title="Videos">
+                            <h:outputText value="Information about Video section" />
+                        </p:tab>
+
+                        <p:tab title="Gallery">
+                        <h:outputText value="Information about Gallery section" />
+                        </p:tab>
+                          
+                      </p:accordionPanel>
                 </p:layoutUnit>
 
             </p:layout>

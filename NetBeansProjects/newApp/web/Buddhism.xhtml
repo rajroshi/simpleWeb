@@ -6,7 +6,7 @@
       xmlns:p="http://primefaces.org/ui">
         
           
-    <f:view contentType="text/html">
+              <f:view contentType="text/html">
         <h:head>
             <f:facet name="first">
                 <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
@@ -30,7 +30,7 @@
                 <p:layoutUnit position="west" size="175" collapsible="true">
                     <p:menu>
                         <p:submenu label="Religion">
-                            <p:menuitem value="Demo" url="http://www.primefaces.org/showcase-labs/ui/home.jsf" />
+                            <p:menuitem value="Buddhism" outcome="Buddhism"/>
                             <p:menuitem value="Documentation" url="http://www.primefaces.org/documentation.html" />
                             <p:menuitem value="Forum" url="http://forum.primefaces.org/" />
                             <p:menuitem value="Themes" url="http://www.primefaces.org/themes.html" />
@@ -49,9 +49,51 @@
                  <p:layoutUnit position="east" size="175" resizable="true" closable="true" collapsible="true">
                     My layout
                 </p:layoutUnit>
+
                 
                 <p:layoutUnit position="center">
-                    About Buddhism
+                    <p:menubar>
+	
+                        <p:submenu label="Hinyana">
+                            <p:menuitem value="Gmail" url="http://www.google.com" />
+                            <p:menuitem value="Hotmail" url="http://www.hotmail.com" />
+                            <p:menuitem value="Yahoo Mail" url="http://mail.yahoo.com" />
+                        </p:submenu>
+
+                        <p:submenu label="Mahayana">
+                            <p:menuitem value="Youtube" url="http://www.youtube.com" />
+                            <p:menuitem value="Break" url="http://www.break.com" />
+                        </p:submenu>
+                        
+                        <p:submenu label="Vajrayana">
+                            <p:menuitem value="Gmail" url="http://www.google.com" />
+                            <p:menuitem value="Hotmail" url="http://www.hotmail.com" />
+                            <p:menuitem value="Yahoo Mail" url="http://mail.yahoo.com" />
+                        </p:submenu>
+                        
+                        </p:menubar>
+
+                      <p:accordionPanel>
+
+                    <p:tab title="Hinyana">
+                        <h:outputText value= "Hinyana"/>
+                                                                
+                         More content for first tab
+                    </p:tab>
+                          
+                     <p:tab title="Mahayana">
+                        <h:outputText value="Mahayana" />
+                  
+                                             
+                     </p:tab>
+
+                    <p:tab title="Vajrayana">
+                        <h:outputText value="Vajrayana" />
+                   
+                    </p:tab>
+                          
+                      </p:accordionPanel>
+
                 </p:layoutUnit>
 
             </p:layout>
