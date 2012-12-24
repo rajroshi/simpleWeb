@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+          
+    <h:head>
+        <title>Welcome Page</title>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+        
+        <p:editor/>
+        
+        <p:accordionPanel dynamic="true">
+	
+        <p:tab title="First Tab Title">
+
+
+        <h:outputText value= "Lorem"/>
+
+
+        ...More content for first tab
+
+        </p:tab>
+
+        <p:tab title="Second Tab Title">
+
+
+        <h:outputText value="Ipsum" />
+
+        </p:tab>
+
+        //any number of tabs
+        </p:accordionPanel>
+
+    </h:body>
+</html>
+
