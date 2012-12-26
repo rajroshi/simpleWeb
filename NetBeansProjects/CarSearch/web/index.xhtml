@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>Car Search</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true" >
+            <p:layoutUnit position="north" size="160" resizable="true" closable="true" collapsible="true" style="border: 0">
+                <p:dock position="top" itemWidth="60" >  
+                    <p:menuitem value="Car" icon="/images/dock/car.png" url="#"/>  
+                    <p:menuitem value="Mobile" icon="/images/dock/mobile.png" url="#"/>  
+                    <p:menuitem value="Login" icon="/images/dock/login.png" url="#"/>  
+                    <p:menuitem value="Register" icon="/images/dock/register.png" url="#"/>
+                    <p:menuitem value="Rules" icon="/images/dock/rules.png" url="#"/>
+                    <p:menuitem value="Help" icon="/images/dock/help.png" url="#"/>
+                </p:dock> 
+            </p:layoutUnit>
+            
+            <p:layoutUnit position="center" style="border: 0">
+                <div align="center">
+        
+                    <p:imageSwitch effect="shuffle">  
+                        <ui:repeat value="#{imageSwitchBean.images}" var="image">  
+                            <p:graphicImage value="/images/front/#{image}"  height="400"/>  
+                        </ui:repeat>  
+                    </p:imageSwitch> 
+                    <p style="color:sienna">Welcome to Search Engine</p>
+                </div>
+            </p:layoutUnit>
+
+
+            <p:layoutUnit position="south" size="100" closable="true" collapsible="true" style="border: 0">
+                <p:dock itemWidth="80" >  
+                    <p:menuitem value="Car" icon="/images/dock/car.png" url="#"/>  
+                    <p:menuitem value="Mobile" icon="/images/dock/mobile.png" url="#"/>  
+                    <p:menuitem value="Login" icon="/images/dock/login.png" url="#"/>  
+                    <p:menuitem value="Register" icon="/images/dock/register.png" url="#"/>
+                    <p:menuitem value="Rules" icon="/images/dock/rules.png" url="#"/>
+                    <p:menuitem value="Help" icon="/images/dock/help.png" url="#"/>
+                </p:dock> 
+            </p:layoutUnit>
+        </p:layout> 
+    </h:body>
+</html>
+
