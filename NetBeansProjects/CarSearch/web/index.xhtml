@@ -9,40 +9,40 @@
     </h:head>
     <h:body>
         <p:layout fullPage="true" >
-            <p:layoutUnit position="north" size="160" resizable="true" closable="true" collapsible="true" style="border: 0">
+            <p:layoutUnit position="north" size="260" resizable="true" closable="true" collapsible="true" style="border: 0">
+                                            
                 <p:dock position="top" itemWidth="60" >  
                     <p:menuitem value="Car" icon="/images/dock/car.png" url="#"/>  
                     <p:menuitem value="Mobile" icon="/images/dock/mobile.png" url="#"/>  
-                    <p:menuitem value="Login" icon="/images/dock/login.png" url="#"/>  
-                    <p:menuitem value="Register" icon="/images/dock/register.png" url="#"/>
-                    <p:menuitem value="Rules" icon="/images/dock/rules.png" url="#"/>
-                    <p:menuitem value="Help" icon="/images/dock/help.png" url="#"/>
                 </p:dock> 
+                <div align="center" style="margin-top: 70px">                                      
+                    <p:graphicImage value="/images/dock/car.png"></p:graphicImage>
+                    
+                </div>
+            </p:layoutUnit>
+            
+            <p:layoutUnit position="south" size="100" closable="true" collapsible="true" style="border: 0"  >
+                footer
             </p:layoutUnit>
             
             <p:layoutUnit position="center" style="border: 0">
                 <div align="center">
-        
-                    <p:imageSwitch effect="shuffle">  
-                        <ui:repeat value="#{imageSwitchBean.images}" var="image">  
-                            <p:graphicImage value="/images/front/#{image}"  height="400"/>  
-                        </ui:repeat>  
-                    </p:imageSwitch> 
-                    <p style="color:sienna">Welcome to Search Engine</p>
-                </div>
-            </p:layoutUnit>
-
-
-            <p:layoutUnit position="south" size="100" closable="true" collapsible="true" style="border: 0">
-                <p:dock itemWidth="80" >  
-                    <p:menuitem value="Car" icon="/images/dock/car.png" url="#"/>  
-                    <p:menuitem value="Mobile" icon="/images/dock/mobile.png" url="#"/>  
-                    <p:menuitem value="Login" icon="/images/dock/login.png" url="#"/>  
-                    <p:menuitem value="Register" icon="/images/dock/register.png" url="#"/>
+                 <p:stack icon="/images/dock/stack.png" expanded="true">  
+                    <p:menuitem value="Help" icon="/images/dock/help.png" url="#"/>                     
+                    <p:menuitem value="Register" icon="/images/dock/register.png" url="#"/>  
                     <p:menuitem value="Rules" icon="/images/dock/rules.png" url="#"/>
-                    <p:menuitem value="Help" icon="/images/dock/help.png" url="#"/>
-                </p:dock> 
+                    <p:menuitem value="Login" icon="/images/dock/login.png" url="#"/>  
+                    
+                </p:stack>
+                    
+                    <p:inputText maxlength="30" size="40" label="Search"></p:inputText>
+                    <p:dock position="top" itemWidth="160" proximity="0">  
+                          <p:menuitem value="Search" icon="/images/dock/search.png" url="/faces/SearchEngine.xhtml"/>
+                    </p:dock>                     
+                </div>
+                       
             </p:layoutUnit>
+            
         </p:layout> 
     </h:body>
 </html>
